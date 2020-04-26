@@ -1,109 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	  <!-- Важная техническая информация для браузера -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<!-- Информация об Авторе и описание проекта -->
-		<meta name="description" content="">
-		<meta name="auyhor" content="">
-		
-		<!-- Иконка, которая будет на вкладке в браузере -->
-		<link rel="icon" href="/favicon.ico">
-		<!-- Заголовок на вкладке в браузере -->
-		<title></title>
-
-		<!-- Подключаем наш файл со стилями, который находится в папке css-->
-		<link rel="stylesheet" href="css/style.css">
-		<!-- Подключаем bootstrap grid-->
-		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Landing</title>
 </head>
-
 <body>
- <!-- Тут будет модержимое будущего сайта -->
+    <header class="header">
+        <ul>
+            <li><a href="#method">Методика</a></li>
+            <li><a href="#process">Процесс</a></li>
+            <li><a href="#superiority">Плюсы</a></li>
+            <li><a href="#review">Отзывы</a></li>
+            <li><a href="#lesson">Цены</a></li>
+            <li><a href="#questions">Вопросы</a></li>
+            <li><a href="#lesson" class="button">Бесплатный урок</a></li>
+        </ul>
+    </header>
+   <section class="about">
+       <div class="about_info">
+           <h1><span>В</span>аснин <span>М</span>аксим <span>Ю</span>рьевич</h1>
+           <h2>Репетитор по математике</h2>
+           <p>Набираю учеников 9 классов для
+            подготовки к <span>ОГЭ по математике 2020.</span> </p>
+           <p>Специализируюсь на <span>слабых</span> учениках,
+            кому математика дается непросто. </p>
+       </div>
+        <img class="about_image" src="img/aboutme.png" alt="">
+        <img class="circle_img" src="img/circle.png" alt="">
+        <div class="about_me">
+            <h2>О себе:</h2>
+            <p>- высшее педагогическое образование;</p>
+            <p>- опыт работы шесть лет.</p>
+        </div>
+   </section>
+   <div class="line">
 
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7">
-					<img src="img/main.png" alt="Монитор" class="header-img">
-				</div>
-				<!-- /.col-7 -->
-				<div class="col-lg-5">
-					<p class="header-pretitle">Веб-разработчик</p>
-					<h1 class="header-title">Сергей Азаров</h1>
-					<p class="header-subtitle">Верстка на HTML/CSS<br>
-Разработка сайтов под ключ</p>
-					<div class="header-button-block">
-						<button class="header-button">Связаться</button>
-					<small>*Это бесплатно</small>
-					</div>
-				</div>
-				<!-- /.col-5 -->
-			</div>
-			<!-- /.row -->
-		</div>
-		<!-- /.container -->
-	</header>
+   </div>
+   <a name="method"></a>
+   <section class="method">
+       <div class="My-method">
+           <h2><span>М</span>оя методика обучения</h2>
+           <p>Основные моменты, на которых
+            основана моя методика</p>
+       </div>
+       <div class="method_cards">
+            <div class="method_card">
+                <h2><span>А</span>вторские учебные
+                    материалы</h2>
+                <p>Любую тему мы с ребятами
+                    разбираем с самых элементарных
+                    заданий - от простого к сложному.
+                    Таким образом, ученики гораздо
+                    эффективнее усваивают учебный материал.</p>
+            </div>
+            <div class="method_card">
+                <h2><span>З</span>акрепление
+                    материала</h2>
+                <p>Весь пройденный материал
+                    закрепляем объемной домашней
+                    работой.</p>
+            </div>
+            <div class="method_card">
+                <h2><span>У</span>чим думать
+                    быстро</h2>
+                <p>Много ошибок ученики допускают
+                    из-за нехватки времени,
+                    суетливости. Поэтому
+                    периодически мы тренируем
+                    скорость выполнения заданий.</p>
+            </div>
+       </div>
+       <div class="three_circle">
+            <div class="circle">
 
-	<section class="portfolio">
-		<div class="container">
-			<div class="portfolio-block">
-				<h2 class="portfolio-title">Портфолио</h2>
-				<p class="portfolio-subtitle">Мои работы</p>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="portfolio-col-1">
-							<img src="img/portfolio-1.png" alt="Газпром">
-							<h3>внутренний университет «Газпром нефти»</h3>
-							<p class="portfolio-text">У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
-							<a href="#">Смотреть работу</a>
-						</div>
-					</div>
-					<!-- /.col-6 -->
-					<div class="col-md-6">
-						<div class="portfolio-col-2">
-							<img src="img/portfolio-2.png" alt="Платежная система Мир">
-							<h3>Сайт платежной системы «Мир»</h3>
-							<p class="portfolio-text">Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
-							<a href="#">Смотреть работу</a>
-						</div>
-					</div>
-					<!-- /.col-6 -->
-				</div>
-			</div>
-		</div>
-	</section>
+            </div>
+            <div class="circle">
+                
+            </div>
+            <div class="circle">
+                
+            </div>
+        </div>
+   </section>
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h4 class="footer-author">Азаров Сергей</h4>
-					<p class="footer-text">Разработка сайтов под ключ</p>
-				</div>
-				<div class="col-md-4">
-					<div class="social-block">
-						<p>Подпишитесь:</p>
-						<a href="#"><img src="img/facebook-logo-button.png" alt="facebook"></a>
-						<a href="#"><img src="img/telegram-symbol.png" alt="telegram"></a>
-						<a href="#"><img src="img/vk-social-logotype.png" alt="vk"></a>
-						<a href="#"><img src="img/youtube-symbol.png" alt="youtube"></a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="footer-cta-block">
-						<p class="footer-cta">Напишите мне:</p>
-					<button class="footer-button">Написать</button>
-					</div>
-				</div>
-			</div>
-			<!-- /.row -->
-		</div>
-	</footer>
+   <a name="process"></a>
+   <section class="process">
+       <div class="process_info">
+           <div class="process_info__title">
+                <h2>Учебный процесс</h2>
+                <p>Коротко о том как выглядит
+                    процесс обучения у меня</p>
+           </div>
+           <div class="process_info_points">
+                <p>Группы по 5 человек</p>
+                <p>Работа через Discord</p>
+                <p>Занятия по вторникам</p>
+           </div>
+       </div>
+       <img class="process_circle" src="img/Ellipse.png" alt="">
+       <img class="process_computer" src="img/computer.png" alt="">
+   </section>
+
+   <a name="superiority"></a>
+   <section class="superiority">
+        <h2>Превосходства</h2>
+        <div class="superiority_cards">
+            <div class="superiority_card">
+                <div><p class="plus">+</p>
+                </div>
+                <h3>Простота</h3>
+                <p>От вас не требуется практически
+                    никаких действий по организации.</p>
+            </div>
+            <div class="superiority_card">
+                <div ><p class="plus">+</p>
+                </div>
+                <h3>Доступность</h3>
+                <p>Можно заниматься из любой точки мира.</p>
+            </div>
+            <div class="superiority_card">
+                <div><p class="plus">+</p>
+                </div>
+                <h3>Привычность</h3>
+                <p>Уроки максимально
+                    приближены к очным.</p>
+            </div>
+            <div class="superiority_card">
+                <div><p class="plus">+</p>
+                </div>
+                <h3>Удобство</h3>
+                <p>Дистанционный формат и
+                    электронные материалы делают
+                    наши уроки удобнее очной работы.</p>
+            </div>
+            <div class="superiority_card">
+                <div><p class="plus">+</p>
+                </div>
+                <h3>Мультиплатформенность</h3>
+                <p>Нет ограничений к технике, по которой
+                    будет происходить обучение.</p>
+            </div>
+            <div class="superiority_card">
+                <div><p class="plus">+</p>
+                </div>
+                <h3>На связи</h3>
+                <p>Родитель или ученик в любой
+                    момент может обратиться ко мне
+                    по WhatsApp. </p>
+            </div>
+        </div>
+   </section>
+
+   <a name="review"></a>
+   <section class="review">
+        <div class="widget">
+            <!-- Profi.ru widget start -->
+<div class="profi-widget" data-id="52cb7b3de9eb0bbc917034bb4e749200" data-type="300x100">
+    Powered by <a href="https://profi.ru/profile/VasninMU"></a>
+    </div>
+    <script src="https://profi.ru/jqs/widget/widget.js"></script>
+    <!-- Profi.ru widget end -->
+        </div>
+   </section>
+
+   <!-- Price lesson -->
+   <a name="lesson"></a>
+   <section class="lesson">
+
+    <div class="lesson__price">
+        <p>Обычный прайс:</p>
+        <p><span>490</span> руб/занятие</p>
+    </div>
+    <div class="lesson__form">
+        <h2>Записаться на
+            бесплатное занятие</h2>
+        <form action="">
+            <div class="circle-free">
+                <p>free</p>
+            </div>
+            <input type="text" required placeholder="Имя">
+            <input type="text" required placeholder="Электронная почта">
+            <input type="text" required placeholder="Номер телефона">
+            <button type="submit">
+                <p>Первый урок бесплатно</p>
+                <p><s>490 руб/90 мин</s></p>
+            </button>
+        </form>
+    </div>
+       
+   </section>
+
+    <!-- Questions -->
+    <a name="questions"></a>
+    <section class="questions">
+
+        <div class="questions__title">
+            <h2>Часто задаваемые вопросы</h2>
+        </div>
+
+        <div class="questions__cards">
+
+            <div class="qcard">
+                <div class="qcard__square">
+                    <p>?</p>
+                </div>
+                <h2>Кому будут полезны занятия?</h2>
+                <p class="qcard__text">Данный курс рассчитан на слабых учеников, кому нужно сдать ОГЭ на средний балл.</p>
+            </div>
+
+            <div class="qcard">
+                <div class="qcard__square">
+                    <p>?</p>
+                </div>
+                <h2>Как проходят занятия?</h2>
+                <p class="qcard__text">Занятия проходят в программе <span>"Discord"</span> (аналог "Skype"). Здесь я включаю <span>"Прямую трансляцию"</span> совоего монитора, где открыты задания по темам и <span>электронная тетрадь</span> для объяснения материала.</p>
+            </div>
+
+            <div class="qcard">
+                <div class="qcard__square">
+                    <p>?</p>
+                </div>
+                <h2>Что будет на бесплатном уроке?</h2>
+                <p class="qcard__text">На первом уроке мы познакомимся с ребятами и сразу начнём подготовку к экзамену. За урок научимся решать 5 самых легких примеров ОГЭ, а в конце урока ребята получат объемную домашнюю работу для самостоятельной тренировки и закрепления пройденного материала.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+   <!-- Footer -->
+   <section class="footer">
+
+        <div class="info">
+            <p class="info__name">Васнин Максим Юрьевич</p>
+            <a class="info__phone" href="tel:89969718643">тел. 8-996-971-86-43</a>
+            <div class="info__socials">
+
+                <div class="vk">
+                    <a href="#">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="skype">
+                    <a href="skype:live:555830ceaef0128b?call">
+                        <i class="fa fa-skype" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="whatsapp">
+                    <a href="https://wa.me/79969718643">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:vasnin-maksim@yandex.ru">
+                        <i class="fa fa-at" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+   </section>
+
 
 </body>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/85199c955f.js" crossorigin="anonymous"></script>
 </html>
