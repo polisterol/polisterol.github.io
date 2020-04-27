@@ -178,13 +178,13 @@
     <div class="lesson__form">
         <h2>Записаться на
             бесплатное занятие</h2>
-        <form action="#" method="POST">
+        <form action="php/order.php" method="POST">
             <div class="circle-free">
                 <p>free</p>
             </div>
-            <input type="text" required placeholder="Имя">
-            <input type="text" required placeholder="Электронная почта">
-            <input type="text" required placeholder="Номер телефона">
+            <input name="name" type="text" placeholder="Имя" required>
+            <input name="email" type="email" placeholder="Электронная почта" required>
+            <input name="phone" type="tel" placeholder="Номер телефона" required>
             <button type="submit">
                 Первый урок бесплатно<br>
                 <s>490 руб/90 мин</s>
