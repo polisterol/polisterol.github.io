@@ -7,6 +7,7 @@
     <title>Landing</title>
 </head>
 <body>
+    <div class="header_wrapper">
     <header class="header">
         <ul>
             <li><a href="#method">Методика</a></li>
@@ -18,6 +19,7 @@
             <li><a href="#lesson" class="button">Бесплатный урок</a></li>
         </ul>
     </header>
+    </div>
    <section class="about">
        <div class="about_info">
            <h1><span>В</span>аснин <span>М</span>аксим <span>Ю</span>рьевич</h1>
@@ -176,12 +178,13 @@
         <p><span>490</span> руб/занятие</p>
     </div>
     <div class="lesson__form">
+        <div class="circle-free">
+            <p>free</p>
+        </div>
         <h2>Записаться на
             бесплатное занятие</h2>
         <form action="php/order.php" method="POST">
-            <div class="circle-free">
-                <p>free</p>
-            </div>
+            
             <input name="name" type="text" placeholder="Имя" required>
             <input name="email" type="email" placeholder="Электронная почта" required>
             <input name="phone" type="tel" placeholder="Номер телефона" required>
